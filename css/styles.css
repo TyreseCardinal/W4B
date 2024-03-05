@@ -51,19 +51,16 @@ header {
   border: 1px solid #B8DDFF;
   margin-top: 5rem;
   background-color: #B8DDFF;
-  border-radius: 25px;
 }
 
-#demo-application p,
-h2 {
+#demo-application {
   color: #0084FF;
   font-weight: bolder;
-  width: 50em;
 }
 
 #app-store {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   background-color: #0084FF;
   border: 1px solid #0084FF;
   border-radius: 50px;
@@ -73,10 +70,10 @@ h2 {
 }
 
 #app-store img {
-  width: 2rem;
+  width: 1rem;
   height: auto;
   display: grid;
-  justify-self: center;
+  justify-self: start;
 }
 
 #app-store p {
@@ -87,6 +84,67 @@ h2 {
 
 #blue-phone {
   width: 50%;
+}
+
+.card {
+  display: grid;
+  justify-items: center;
+  border-radius: 25px;
+  border: 1px solid black;
+  margin: 2rem 0px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+#clean-code {
+  background-color: #CAF0DB;
+}
+
+#clean-code {
+  color: #54C788;
+}
+
+#web-design {
+  background-color: #FFD2D2;
+}
+
+#web-design {
+  color: #FF8A8A;
+}
+
+#development {
+  background-color: #FFE7C4;
+}
+
+#development {
+  color: #FFC166;
+}
+
+#branding {
+  background-color: #D5D4F5;
+}
+
+#branding {
+  color: #9693E6;
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+  .card {
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .card img {
+    width: 25%;
+  }
+
 }
 
 /* End Of Main Styling */
