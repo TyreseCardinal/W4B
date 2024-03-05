@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  ;
+}
+
+
+
+/* Header Styling */
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.menu-icon span {
+  height: 3px;
+  width: 40px;
+  background-color: White;
+  margin: 6px 0;
+}
+
+header>img {
+  max-width: 150px;
+  height: auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: start;
+  padding: 5px;
+  background-color: #0084FF;
+  height: 15vh;
+}
+
+.menu-icon {
+  justify-self: end;
+}
+
+/* End of Header Styling */
+
+/* Main Styling */
+#demo-application {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  justify-items: center;
+  border: 1px solid #B8DDFF;
+  margin-top: 5rem;
+  background-color: #B8DDFF;
+  border-radius: 25px;
+}
+
+#demo-application p,
+h2 {
+  color: #0084FF;
+  font-weight: bolder;
+  width: 50em;
+}
+
+#app-store {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #0084FF;
+  border: 1px solid #0084FF;
+  border-radius: 50px;
+  align-items: center;
+  max-width: fit-content;
+  padding: 0 2.5rem;
+}
+
+#app-store img {
+  width: 2rem;
+  height: auto;
+  display: grid;
+  justify-self: center;
+}
+
+#app-store p {
+  color: white;
+  justify-self: center;
+  font-size: medium;
+}
+
+#blue-phone {
+  width: 50%;
+}
+
+/* End Of Main Styling */

@@ -1,0 +1,16 @@
+Dark Blue: #0084FF
+Light Blue: #B8DDFF
+
+Dark Green: #54C788
+Light Green: #CAF0DB
+
+Dark Red: #FF8A8A
+Light Red: #FFD2D2
+
+Dark Yellow: #FFC166
+Light Yellow: #FFE7C4
+
+Dark Purple: #9693E6
+Light Purple: #D5D4F5
+
+Dark Grey: #333333
