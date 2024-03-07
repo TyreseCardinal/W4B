@@ -2,10 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'PT Sans', sans-serif;
-  ;
 }
-
-
 
 /* Header Styling */
 .menu-icon {
@@ -44,18 +41,37 @@ header {
 /* End of Header Styling */
 
 /* Main Styling */
-#demo-application {
+.card {
   display: grid;
-  grid-template-rows: repeat(4, auto);
-  justify-items: center;
-  border: 1px solid #B8DDFF;
-  margin-top: 5rem;
-  background-color: #B8DDFF;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
 }
 
 #demo-application {
+  background-color: #B8DDFF;
   color: #0084FF;
-  font-weight: bolder;
+  margin-top: 5rem;
+  grid-template-rows: repeat(4, auto);
+}
+
+#demo-application p {
+  font-size: 1.7rem;
+  text-align: left;
+  justify-self: center;
+}
+
+#demo-application h1 {
+  font-size: 2.5rem;
+  justify-self: center;
 }
 
 #app-store {
@@ -63,89 +79,68 @@ header {
   grid-template-columns: 1fr 2fr;
   background-color: #0084FF;
   border: 1px solid #0084FF;
-  border-radius: 50px;
+  border-radius: 20rem;
   align-items: center;
   max-width: fit-content;
-  padding: 0 2.5rem;
+  padding: 0px 3.5rem;
+  margin: 0;
 }
 
 #app-store img {
-  width: 1rem;
+  width: 1.5rem;
   height: auto;
-  display: grid;
   justify-self: start;
 }
 
 #app-store p {
   color: white;
   justify-self: center;
-  font-size: medium;
+  font-size: 1.2rem;
 }
 
 #blue-phone {
   width: 50%;
+  margin-top: 1.5rem;
 }
 
-.card {
-  display: grid;
-  justify-items: center;
-  border-radius: 25px;
-  border: 1px solid black;
-  margin: 2rem 0px;
-}
+@media screen and (max-width:768px) {
+  #blue-phone {
+    justify-self: start;
+    padding-left: 4rem;
+  }
 
-.card img {
-  max-width: 100%;
-  height: auto;
+  #app-store {
+    justify-self: start;
+    margin-left: 5rem;
+  }
+
 }
 
 #clean-code {
   background-color: #CAF0DB;
+  color: #54C788;
 }
 
-#clean-code {
-  color: #54C788;
+
+#clean-code img {
+  width: 100%;
 }
 
 #web-design {
   background-color: #FFD2D2;
-}
-
-#web-design {
   color: #FF8A8A;
 }
 
 #development {
   background-color: #FFE7C4;
-}
-
-#development {
   color: #FFC166;
 }
 
 #branding {
   background-color: #D5D4F5;
-}
-
-#branding {
   color: #9693E6;
 }
 
-
-
-
-
-
-@media screen and (max-width:768px) {
-  .card {
-    grid-template-rows: repeat(3, auto);
-  }
-
-  .card img {
-    width: 25%;
-  }
-
-}
 
 #linkedin {
   display: grid;
