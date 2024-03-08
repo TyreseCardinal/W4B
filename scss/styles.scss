@@ -1,10 +1,28 @@
+$dark-blue: #0084FF;
+$light-blue: #B8DDFF;
+
+$dark-green: #54C788;
+$light-green: #CAF0DB;
+
+$dark-Red: #FF8A8A;
+$light-red: #FFD2D2;
+
+$dark-Yellow: #FFC1b6;
+$light-yellow: #FFE7C4;
+
+$dark-Purple: #9693E6;
+$light-purple: #D5D4F5;
+
+$dark-Grey: #333333;
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
   background-color: white;
 }
 
+// Header Styling
 #menu-icon {
   display: flex;
   flex-direction: column;
@@ -19,7 +37,7 @@ body {
   margin: 6px 0;
 }
 
-header > img {
+header>img {
   max-width: 150px;
   height: auto;
 }
@@ -30,7 +48,7 @@ header {
   align-items: center;
   justify-items: start;
   padding: 5px;
-  background-color: #0084FF;
+  background-color: $dark-blue;
   height: 15vh;
 }
 
@@ -39,6 +57,7 @@ header {
 }
 
 /* End of Header Styling */
+
 /* Main Styling */
 .card {
   display: grid;
@@ -65,8 +84,8 @@ header {
 }
 
 #demo-application {
-  background-color: #B8DDFF;
-  color: #0084FF;
+  background-color: $light-blue;
+  color: $dark-blue;
   margin: 5rem 0px 2rem 0px;
   grid-template-rows: repeat(4, auto);
 }
@@ -111,26 +130,31 @@ header {
   margin-top: 1.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
   #blue-phone {
     justify-self: start;
     padding-left: 4rem;
   }
+
   #app-store {
     justify-self: start;
     margin-left: 5rem;
   }
+
 }
+
 #clean-code {
   background-color: #CAF0DB;
   color: #54C788;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
   #clean-code img {
     width: 25%;
   }
 }
+
+
 #web-design {
   background-color: #FFD2D2;
   color: #FF8A8A;
@@ -145,6 +169,7 @@ header {
   background-color: #D5D4F5;
   color: #9693E6;
 }
+
 
 #linkedin {
   display: grid;
@@ -164,5 +189,3 @@ header {
 }
 
 /* End Of Main Styling */
-
-/*# sourceMappingURL=styles.css.map */
