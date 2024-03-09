@@ -161,21 +161,56 @@ header img {
     background-color: #9693E6;
     color: white;
     text-align: left;
-    width: 100%;
+    width: 100vw;
+    height: auto;
     display: grid;
     grid-template-rows: repeat(4, auto);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     justify-items: center;
+    letter-spacing: 1px;
+    line-height: 2rem;
   }
   #strategic-planning h1 {
     justify-self: start;
-    margin-left: 5rem;
+    font-size: 2.5rem;
+    margin-left: 3.5rem;
+  }
+  #strategic-planning > img {
+    width: 70%;
+    padding-top: 5rem;
   }
   #app-development {
-    margin: 3rem;
     display: grid;
     grid-template-rows: repeat(4, auto);
     text-align: center;
+    background-color: white;
+    color: #333333;
+    border-radius: 75px;
+    padding: 1rem;
+    margin: 3rem;
+    justify-self: center;
+    height: auto;
+  }
+  #app-development p {
+    font-size: 1.5rem;
+  }
+  #app-development h2 {
+    justify-self: center;
+  }
+  #app-development img {
+    width: 80%;
+    height: auto;
+    justify-self: center;
+    padding-top: 2rem;
+  }
+  #down-arrow {
+    border: 1px solid #D5D4F5;
+    background-color: #D5D4F5;
+    border-radius: 100%;
+    justify-self: center;
+    align-self: start;
+    justify-self: center;
+    margin: 1.5rem 0 1.5rem 0;
   }
 }
 
