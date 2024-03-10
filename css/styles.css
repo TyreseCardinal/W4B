@@ -257,6 +257,8 @@ header img {
   justify-items: center;
   width: 80%;
   height: 100%;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
 }
 
 #testimonial-1 img,
@@ -267,13 +269,6 @@ header img {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   padding-top: 2rem;
-}
-
-#testimonial-1 p,
-#testimonial-2 p,
-#testimonial-3 p {
-  font-size: 1.2rem;
-  letter-spacing: 2px;
 }
 
 #testimonial-1 {
