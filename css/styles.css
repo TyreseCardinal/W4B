@@ -294,4 +294,9 @@ header img {
   /* Adjust the fill color as needed */
 }
 
+#benefits-container {
+  grid-template-rows: repeat(7, auto);
+  background-color: #9693E6;
+}
+
 /*# sourceMappingURL=styles.css.map */
