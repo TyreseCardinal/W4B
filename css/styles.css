@@ -6,11 +6,6 @@
   padding-right: 0.5rem;
 }
 
-@media screen and (max-width: 640px) {
-  .container {
-    max-width: 475px;
-  }
-}
 @media screen and (max-width: 768px) {
   .container {
     max-width: 640px;
@@ -19,6 +14,11 @@
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 768px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
   }
 }
 body {
@@ -286,6 +286,17 @@ header img {
 
 #testimonial-3 {
   background-color: #CAF0DB;
+}
+
+.quote-svg {
+  display: inline-block;
+  /* Ensures SVGs are inline with text */
+  height: 24px;
+  /* Adjust the height as needed */
+  width: 24px;
+  /* Adjust the width as needed */
+  fill: currentColor;
+  /* Adjust the fill color as needed */
 }
 
 /*# sourceMappingURL=styles.css.map */

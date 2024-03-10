@@ -324,5 +324,15 @@ header img {
   background-color: $light-green;
 }
 
+.quote-svg {
+  display: inline-block;
+  /* Ensures SVGs are inline with text */
+  height: 24px;
+  /* Adjust the height as needed */
+  width: 24px;
+  /* Adjust the width as needed */
+  fill: currentColor;
+  /* Adjust the fill color as needed */
+}
 
 // End Of Testimonials Section Styling //

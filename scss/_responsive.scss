@@ -14,12 +14,12 @@
 //   }
 // }
 
-// Small //
-@media screen and (max-width:640px) {
-  .container {
-    max-width: 475px;
-  }
-}
+// // Small //
+// @media screen and (max-width:640px) {
+//   .container {
+//     max-width: 475px;
+//   }
+// }
 
 // Medium //
 @media screen and (max-width:768px) {
@@ -35,12 +35,12 @@
   }
 }
 
-// // X-Large //
-// @media screen and (max-width:1280px) {
-//   .container {
-//     max-width: 1024px;
-//   }
-// }
+// X-Large //
+@media screen and (max-width:1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
 
 // // XX-Large //
 // @media screen and (max-width:1536px) {
