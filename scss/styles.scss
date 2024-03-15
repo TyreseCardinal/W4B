@@ -38,6 +38,12 @@ img {
   border-radius: 25px;
 }
 
+@media screen and (max-width:768px) {
+  .container {
+    padding: 0
+  }
+}
+
 // End Of General Styling //
 
 // Header Styling //
@@ -77,9 +83,6 @@ header img {
     max-height: fit-content;
     margin-top: 2.5rem;
   }
-}
-
-@media screen and (max-width:768px) {
 
   #demo-application,
   #clean-code,
@@ -93,46 +96,74 @@ header img {
   }
 }
 
+// End Of Mobile// 
+
+// Tablet Media Queries //
+@media screen and (min-width:769px) and (max-width:1024px) {
+  #five-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+
+  #clean-code,
+  #web-design,
+  #development,
+  #branding {
+    text-align: center;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  #clean-code img,
+  #web-design img,
+  #development img,
+  #branding img {
+    max-width: 50%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
 // Demo Application Card Styling //
+
+// Mobile //
 @media screen and (max-width:768px) {
-  #demo-application>h1 {
+  #demo-application h1 {
     justify-self: start;
     padding-left: 2.5rem;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    width: 100%;
+  }
+
+  #demo-application {
+    margin-top: 5rem;
+  }
+
+  #demo-application p {
+    justify-self: start;
+    padding-left: 2.5rem;
+    width: 100%;
+    font-size: 2rem;
+  }
+}
+
+// Tablet //
+@media screen and (min-width:769px) and (max-width:1024px) {
+  #demo-application {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 
 #demo-application {
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
   color: $dark-blue;
   background-color: $light-blue;
-  margin-top: 5rem;
 }
 
 
-#app-store {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 1px solid $dark-blue;
-  background-color: $dark-blue;
-  color: white;
-  border-radius: 50px;
-  justify-items: center;
-  justify-self: start;
-  width: 1fr;
-  height: auto;
-  word-wrap: none;
-  grid-auto-rows: 1fr;
-  padding: 0px .5rem .5rem 0rem;
-  margin-left: 2rem;
-}
-
-#app-store img {
-  width: 1.5rem;
-  height: auto;
-  justify-self: center;
-  align-self: center;
-  margin-left: 2rem;
-}
 
 @media screen and (max-width:768px) {
   #blue-phone {
@@ -143,6 +174,31 @@ header img {
     height: auto;
   }
 }
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+  #blue-phone {
+    width: 50%;
+    height: auto;
+  }
+}
+
+#app-store img {
+  width: 1.5rem;
+  justify-self: end;
+}
+
+#app-store {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: $dark-blue;
+  color: white;
+  border-radius: 50px;
+  align-items: center;
+  justify-self: start;
+  padding: 0 2rem;
+  margin: 0 0 1rem 2rem;
+}
+
 
 // End Of Demo Application Card Styling //
 

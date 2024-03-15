@@ -8,18 +8,18 @@
 
 
 // // X-Small //
-// @media screen and (max-width:475px) {
-//   .container {
-//     max-width: 100%;
-//   }
-// }
+@media screen and (max-width:475px) {
+  .container {
+    max-width: 100%;
+  }
+}
 
 // // Small //
-// @media screen and (max-width:640px) {
-//   .container {
-//     max-width: 475px;
-//   }
-// }
+@media screen and (max-width:640px) {
+  .container {
+    max-width: 475px;
+  }
+}
 
 // Medium //
 @media screen and (max-width:768px) {
