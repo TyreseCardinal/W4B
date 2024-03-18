@@ -47,6 +47,7 @@ img {
   display: grid;
   border: 1px solid black;
   border-radius: 25px;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 768px) {
@@ -54,158 +55,181 @@ img {
     padding: 0;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  br {
+    display: none;
+  }
+}
 header {
   background-color: #0084FF;
   width: auto;
-  height: auto;
+  height: 100%;
   overflow-x: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
+  margin-bottom: 5rem;
 }
 
 header img {
   justify-self: start;
-  padding-left: 1em;
-  max-width: 30%;
+  padding-left: 1rem;
+  max-width: 20%;
 }
 
 .menu-icon {
   justify-self: end;
-  padding-right: 2em;
+  padding-right: 2rem;
   color: white;
 }
 
-@media screen and (max-width: 768px) {
-  #clean-code img,
-  #web-design img,
-  #development img,
-  #branding img {
-    max-width: 30%;
-    max-height: fit-content;
-    margin-top: 2.5rem;
-  }
-  #demo-application,
-  #clean-code,
-  #web-design,
-  #development,
-  #branding {
-    text-align: left;
-    font-size: 1.5rem;
-    align-items: center;
-    justify-items: center;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  #five-card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 2rem;
-  }
-  #clean-code,
-  #web-design,
-  #development,
-  #branding {
-    text-align: center;
-    grid-template-rows: repeat(3, auto);
-  }
-  #clean-code img,
-  #web-design img,
-  #development img,
-  #branding img {
-    max-width: 50%;
-    align-self: center;
-    justify-self: center;
-  }
-}
-@media screen and (max-width: 768px) {
-  #demo-application h1 {
-    justify-self: start;
-    padding-left: 2.5rem;
-    font-size: 3rem;
-    letter-spacing: 2px;
-    width: 100%;
-  }
-  #demo-application {
-    margin-top: 5rem;
-  }
-  #demo-application p {
-    justify-self: start;
-    padding-left: 2.5rem;
-    width: 100%;
-    font-size: 2rem;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  #demo-application {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-}
-#demo-application {
-  grid-template-rows: repeat(2, auto);
-  color: #0084FF;
-  background-color: #B8DDFF;
+#five-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
-@media screen and (max-width: 768px) {
-  #blue-phone {
-    align-self: end;
-    width: 40%;
-    padding: 0px 0px 0px 4rem;
-    justify-self: start;
-    height: auto;
-  }
+#demo-application {
+  background-color: #B8DDFF;
+  color: #0084FF;
+  padding: 2rem 2rem 0 2rem;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  #blue-phone {
-    width: 50%;
-    height: auto;
-  }
-}
-#app-store img {
-  width: 1.5rem;
-  justify-self: end;
+
+#demo-application + h1 {
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 2em;
+  width: 100%;
+  font-size: 1.5em;
 }
 
 #app-store {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
   background-color: #0084FF;
   color: white;
-  border-radius: 50px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  justify-items: start;
   align-items: center;
-  justify-self: start;
-  padding: 0 2rem;
-  margin: 0 0 1rem 2rem;
+  width: 35%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.apple-svg {
+  justify-self: end;
+  margin-right: 0.5rem;
 }
 
 #clean-code {
   background-color: #CAF0DB;
   color: #54C788;
-  margin-top: 2rem;
+}
+
+#clean-code h1 {
+  font-size: 2em;
+}
+
+#clean-code p {
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 2em;
+  width: 100%;
+  font-size: 1.5em;
 }
 
 #web-design {
   background-color: #FFD2D2;
   color: #FF8A8A;
-  margin-top: 2rem;
+}
+
+#web-design h1 {
+  font-size: 2em;
+}
+
+#web-design p {
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 2em;
+  width: 100%;
+  font-size: 1.5em;
 }
 
 #development {
   background-color: #FFE7C4;
   color: #FFC166;
-  margin-top: 2rem;
+}
+
+#development h1 {
+  font-size: 2em;
+}
+
+#development p {
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 2em;
+  width: 100%;
+  font-size: 1.5em;
 }
 
 #branding {
   background-color: #D5D4F5;
   color: #9693E6;
-  margin: 2rem 0 5rem 0;
 }
 
+#branding h1 {
+  font-size: 2em;
+}
+
+#branding p {
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 2em;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 1024px) {
+  #clean-code img,
+  #web-design img,
+  #development img,
+  #branding img {
+    max-width: 40%;
+    display: grid;
+    justify-self: center;
+  }
+  #blue-phone {
+    width: 50%;
+    display: grid;
+    align-self: end;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #demo-application {
+    grid-column: span 2;
+  }
+  #demo-application img {
+    width: 50%;
+    height: 100%;
+    align-self: end;
+  }
+  #clean-code {
+    text-align: center;
+    padding: 2rem;
+  }
+  #web-design {
+    text-align: center;
+    padding: 2rem;
+  }
+  #development {
+    text-align: center;
+    padding: 2rem;
+  }
+  #branding {
+    text-align: center;
+    padding: 2rem;
+  }
+}
 @media screen and (max-width: 768px) {
   #strategic-planning {
     border-radius: 0px;

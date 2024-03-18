@@ -1,0 +1,177 @@
+// 5-Card Layout Styling (Including Media Queries for Mobile (Max-width: 768px)) //
+@media screen and (max-width:768px) {
+
+  #clean-code img,
+  #web-design img,
+  #development img,
+  #branding img {
+    max-width: 30%;
+    max-height: fit-content;
+    margin-top: 2.5rem;
+  }
+
+  #demo-application,
+  #clean-code,
+  #web-design,
+  #development,
+  #branding {
+    text-align: left;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+// End Of Mobile// 
+
+
+// Tablet Media Queries //
+@media screen and (min-width:769px) and (max-width:1024px) {
+  #five-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+
+  #clean-code,
+  #web-design,
+  #development,
+  #branding {
+    text-align: center;
+    grid-template-rows: repeat(3, min-content);
+  }
+
+  #clean-code img,
+  #web-design img,
+  #development img,
+  #branding img {
+    max-width: 40%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+// Demo Application Card Styling //
+#demo-application {
+  grid-template-rows: repeat(4, auto);
+  color: $dark-blue;
+  background-color: $light-blue;
+}
+
+// Mobile //
+@media screen and (max-width:768px) {
+  #demo-application h1 {
+    justify-self: start;
+    padding-left: 2.5rem;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    width: 100%;
+  }
+
+  #demo-application {
+    margin-top: 5rem;
+  }
+
+  #demo-application p {
+    justify-self: start;
+    padding-left: 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  #blue-phone {
+    align-self: end;
+    width: 40%;
+    padding: 0px 0px 0px 4rem;
+    justify-self: start;
+    height: auto;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+  #blue-phone {
+    width: 50%;
+    height: auto;
+  }
+}
+
+// Tablet //
+@media screen and (min-width:769px) and (max-width:1024px) {
+  #demo-application {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 2rem;
+    height: 1fr;
+  }
+
+  #demo-application p {
+    justify-self: start;
+    padding-left: 2rem;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  #demo-application h1 {
+    justify-self: start;
+    padding-left: 2.5rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    width: 100%;
+  }
+
+  br {
+    display: none;
+  }
+
+}
+
+
+
+#app-store img {
+  width: 1.5rem;
+  justify-self: end;
+}
+
+#app-store {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: $dark-blue;
+  color: white;
+  border-radius: 50px;
+  align-items: center;
+  justify-self: start;
+  padding: 0 2rem;
+  margin: 0 0 1rem 2rem;
+  width: 45%;
+  height: 100%;
+}
+
+// End Of Demo Application Card Styling //
+
+#clean-code {
+  background-color: $light-green;
+  color: $dark-green;
+  margin-top: 2rem;
+}
+
+#web-design {
+  background-color: $light-red;
+  color: $dark-red;
+  margin-top: 2rem;
+}
+
+#development {
+  background-color: $light-yellow;
+  color: $dark-yellow;
+  margin-top: 2rem;
+}
+
+#branding {
+  background-color: $light-purple;
+  color: $dark-purple;
+  margin-top: 2rem;
+}
+
+// End Of 5-Card Layout Styling (Including Media Queries for Mobile (Max-width: 768px)) //
