@@ -33,7 +33,6 @@ img {
 
 .card {
   display: grid;
-  border: 1px solid black;
   border-radius: 25px;
   box-sizing: border-box;
 }
@@ -42,10 +41,14 @@ img {
   .container {
     padding: 0
   }
+
+  .tablet-word-wrap {
+    display: 1;
+  }
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
-  br {
+  .mobile-word-wrap-test {
     display: none;
   }
 }
@@ -84,6 +87,7 @@ header img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  margin-bottom: 5rem;
 }
 
 //  Demo Application Card Styling //
@@ -93,12 +97,17 @@ header img {
   padding: 2rem 2rem 0 2rem;
 }
 
-#demo-application+h1 {
+#demo-application p {
   letter-spacing: 1px;
   font-weight: 400;
   line-height: 2em;
   width: 100%;
   font-size: 1.5em;
+
+}
+
+#demo-application h1 {
+  font-size: 2rem;
 }
 
 #app-store {
@@ -108,7 +117,7 @@ header img {
   grid-template-columns: 40% 60%;
   justify-items: start;
   align-items: center;
-  width: 35%;
+  width: 60%;
   height: auto;
   border-radius: 50px;
 }
@@ -116,12 +125,14 @@ header img {
 .apple-svg {
   justify-self: end;
   margin-right: .5rem;
+  font-size: 2rem;
 }
 
 // Clean Code Card Styling //
 #clean-code {
   background-color: $light-green;
   color: $dark-green;
+  justify-items: center;
 }
 
 #clean-code h1 {
@@ -140,6 +151,7 @@ header img {
 #web-design {
   background-color: $light-red;
   color: $dark-red;
+  justify-items: center;
 }
 
 #web-design h1 {
@@ -158,6 +170,7 @@ header img {
 #development {
   background-color: $light-yellow;
   color: $dark-yellow;
+  justify-items: center;
 }
 
 #development h1 {
@@ -176,6 +189,7 @@ header img {
 #branding {
   background-color: $light-purple;
   color: $dark-purple;
+  justify-items: center;
 }
 
 #branding h1 {
@@ -190,8 +204,6 @@ header img {
   font-size: 1.5em;
 }
 
-
-
 // Mobile and Tablet //
 @media screen and (max-width:1024px) {
 
@@ -199,16 +211,11 @@ header img {
   #web-design img,
   #development img,
   #branding img {
-    max-width: 40%;
+    max-width: 50%;
     display: grid;
     justify-self: center;
   }
 
-  #blue-phone {
-    width: 50%;
-    display: grid;
-    align-self: end;
-  }
 }
 
 // Tablet
@@ -219,7 +226,7 @@ header img {
 
   #demo-application img {
     width: 50%;
-    height: 100%;
+    height: auto;
     align-self: end;
   }
 
@@ -248,74 +255,79 @@ header img {
 // End Of 5 Card Layout Styling //
 // // // // // // // // // // // // // // // // // //
 // Card Within A Card Styling //
-@media screen and (max-width:768px) {
-  #strategic-planning {
-    border-radius: 0px;
-    background-color: $dark-purple;
-    color: white;
-    text-align: left;
-    width: 100vw;
-    height: auto;
-    display: grid;
-    grid-template-rows: repeat(4, auto);
-    font-size: 1.3rem;
-    justify-items: center;
-    letter-spacing: 1px;
-    line-height: 2rem;
-  }
 
-  #strategic-planning h1 {
-    justify-self: start;
-    font-size: 2.5rem;
-    margin-left: 3.5rem;
-  }
-
-  #strategic-planning>img {
-    width: 70%;
-    padding-top: 5rem;
-  }
-
-  // App Development Styling //
-  #app-development {
-    display: grid;
-    grid-template-rows: repeat(4, auto);
-    text-align: center;
-    background-color: white;
-    color: $dark-grey;
-    border-radius: 75px;
-    padding: 1rem;
-    margin: 3rem;
-    justify-self: center;
-    height: auto;
-  }
-
-  #app-development p {
-    font-size: 1.5rem;
-  }
-
-  #app-development h2 {
-    justify-self: center;
-  }
-
-  #app-development img {
-    width: 80%;
-    height: auto;
-    justify-self: center;
-    padding-top: 2rem;
-  }
-
-  #down-arrow {
-    border: 1px solid $light-purple;
-    background-color: $light-purple;
-    border-radius: 100%;
-    justify-self: center;
-    align-self: start;
-    justify-self: center;
-    margin: 1.5rem 0 1.5rem 0;
-  }
-
-  // End Of App Development Styling //
+#strategic-planning {
+  border-radius: 0px;
+  background-color: $dark-purple;
+  color: white;
+  text-align: left;
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  font-size: 1.3rem;
+  justify-items: center;
+  letter-spacing: 1px;
+  line-height: 2rem;
 }
+
+#strategic-planning h1 {
+  justify-self: start;
+  font-size: 4em;
+  margin-left: 3.5rem;
+}
+
+#strategic-planning p {
+  font-size: 1em;
+  padding-left: 3.5rem;
+}
+
+#strategic-planning>img {
+  width: 70%;
+  padding-top: 5rem;
+}
+
+// App Development Styling //
+#app-development {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  text-align: center;
+  background-color: white;
+  color: $dark-grey;
+  border-radius: 75px;
+  padding: 1rem;
+  margin: 3rem;
+  justify-self: center;
+  height: auto;
+}
+
+#app-development p {
+  font-size: 1.5rem;
+}
+
+#app-development h2 {
+  justify-self: center;
+}
+
+#app-development img {
+  width: 80%;
+  height: auto;
+  justify-self: center;
+  padding-top: 2rem;
+}
+
+#down-arrow {
+  border: 1px solid $light-purple;
+  background-color: $light-purple;
+  border-radius: 100%;
+  justify-self: center;
+  align-self: start;
+  justify-self: center;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+// End Of App Development Styling //
+
 
 // End Of Card Within A Card Styling //
 // // // // // // // // // // // // // // // // // //
@@ -328,10 +340,13 @@ header img {
   border-radius: 0;
   text-align: center;
   row-gap: 2rem;
+  background-color: white;
+  color: $dark-grey;
 }
 
 // Testimonial Header and Text (Not The Cards) Styling //
 #header-text-testimonials {
+  display: grid;
   width: 100%;
   height: min-content;
   border: none;
@@ -343,42 +358,93 @@ header img {
   margin-top: 3rem;
   justify-self: center;
   font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 1em;
 }
-
-#header-text-testimonials p {
-  font-size: 1.4rem;
-  text-align: center;
-}
-
 
 #header-text-testimonials h1 {
   color: $dark-purple;
   font-size: 2.5rem;
   margin: 0;
   padding: 0;
+  justify-self: center;
 }
+
+#header-text-testimonials p {
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  #tablet-word-wrap {
+    display: block;
+  }
+}
+
 
 // End Of Testimonial Header and Text (Not The Cards) Styling //
-#testimonial-1,
-#testimonial-2,
-#testimonial-3 {
-  grid-template-rows: repeat(3, auto);
-  justify-items: center;
-  width: 80%;
-  height: 100%;
-  font-size: 1.2rem;
-  letter-spacing: 2px;
+@media screen and (max-width:768px) {
+
+  #testimonial-1,
+  #testimonial-2,
+  #testimonial-3 {
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    width: 80%;
+    height: 100%;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  #testimonial-1 img,
+  #testimonial-2 img,
+  #testimonial-3 img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-top: 2rem;
+  }
 }
 
-#testimonial-1 img,
-#testimonial-2 img,
-#testimonial-3 img {
-  width: 100%;
-  height: auto;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  padding-top: 2rem;
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+  #testimonial-1,
+  #testimonial-2,
+  #testimonial-3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    width: 85%;
+    height: auto;
+  }
+
+  #testimonial-1 h2,
+  #testimonial-2 h2,
+  #testimonial-3 h2 {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+  }
+
+  #testimonial-1 p,
+  #testimonial-2 p,
+  #testimonial-3 p {
+    font-size: 1.5em;
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+  }
+
+  #testimonial-1 img,
+  #testimonial-2 img,
+  #testimonial-3 img {
+    grid-column: 1;
+    grid-row: span 2;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    align-self: center;
+  }
 }
 
 #testimonial-1 {
@@ -395,11 +461,8 @@ header img {
 
 .quote-svg {
   display: inline-block;
-  /* Ensures SVGs are inline with text */
   height: 24px;
-  /* Adjust the height as needed */
   width: 24px;
-  /* Adjust the width as needed */
 }
 
 // End Of Testimonials Section Styling //
@@ -412,6 +475,21 @@ header img {
   border-radius: 0;
   border: none;
   padding-bottom: 5rem;
+}
+
+@media screen and (max-width:768px) {
+  #benefits-container {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  #benefits-container {
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+    grid-template-rows: repeat(3, auto);
+  }
 }
 
 #benefits-container h1 {
