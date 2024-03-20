@@ -439,22 +439,24 @@ header img {
 @media screen and (max-width: 768px) {
   #benefits-container {
     display: grid;
-    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(7, auto);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #benefits-container {
-    grid-template-columns: 45% 45%;
-    column-gap: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
     grid-template-rows: repeat(3, auto);
   }
+  #benefits-header {
+    display: grid;
+    text-align: center;
+    color: white;
+    background-color: #9693E6;
+    font-size: 1.5em;
+  }
 }
-#benefits-container h1 {
-  color: white;
-  justify-self: center;
-  font-size: 2.2rem;
-}
-
 #high-quality p,
 #creative-team p,
 #amazing-results p,
