@@ -602,100 +602,104 @@ header img {
   grid-template-columns: 1fr;
 }
 
-#about-us,
-#about-us-1 {
+#about-us {
   display: grid;
 }
 
 @media screen and (max-width: 768px) {
   #about-us {
-    grid-template-rows: repeat(5, auto);
-    grid-template-columns: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+  }
+  #whitedudeimg {
+    max-width: 40%;
+    padding: 0 2em;
+  }
+  #about-us-text-1,
+  #about-us-text-2 {
+    line-height: 2em;
+    padding-left: 2em;
+    font-size: 1.3em;
+  }
+  #about-us h1 {
+    padding-left: 0.8em;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  #about-us-1 {
-    grid-template-areas: "header sidebar-image" "main-text sidebar-quote" "footer-text sidebar-svg";
-    grid-template-columns: 60% 40%;
-    grid-template-rows: repeat(3, auto);
-  }
-}
-#about-us h1 {
-  color: #9693E6;
-  font-size: 5em;
-  padding-left: 0.4em;
-  text-align: left;
-  align-self: bottom;
-}
-
 #about-us-text-1,
 #about-us-text-2 {
-  display: grid;
-  font-size: 1.5em;
-  padding-left: 1em;
-  line-height: 2.2em;
   color: #333333;
+  letter-spacing: 1px;
 }
 
-#about-us-text-2 {
-  padding-top: 4rem;
-}
-
-#about-us img {
-  width: 70%;
-  padding-left: 1rem;
-  justify-self: center;
+#about-us h1 {
+  font-size: 3rem;
+  color: #9693E6;
 }
 
 #about-us h2 {
-  font-size: 2.1rem;
-  line-height: 4rem;
   color: #9693E6;
-  padding-left: 1.4em;
-  height: 100%;
-}
-
-#u-svg-content {
-  background-color: #9693E6;
-}
-
-#linkedin {
-  display: grid;
-  grid-template-columns: 1fr 8fr;
-  align-items: center;
-  justify-items: center;
-  width: 13em;
-  height: 4em;
-  border-radius: 1em;
-  color: white;
-  background-color: #9693E6;
-  padding: 0 1em 0 1em;
-  margin: 0 0 5rem 1rem;
+  font-size: 2em;
+  padding-left: 0.8em;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  #about-us h1 {
-    grid-area: header;
-    grid-template-columns: 100px;
-  }
-  #about-us-text-1 {
-    grid-area: main-text;
-  }
-  #about-us-text-2 {
-    grid-area: footer-text;
-    padding-bottom: 15rem;
-  }
-  #about-us img {
-    grid-area: sidebar-image;
-  }
-  #about-us h2 {
-    grid-area: sidebar-quote;
+  #about-us {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    padding: 2rem;
   }
   #linkedin {
-    grid-area: sidebar-svg;
-    justify-self: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  #about-us-text-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+  #about-us-text-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+  #about-us img {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: auto;
+    width: 70%;
+    margin-left: 2em;
   }
 }
+#linkedin {
+  background-color: #9693E6;
+  grid-template-columns: 1fr 4fr;
+  display: grid;
+  align-items: center;
+  width: max-content;
+  height: min-content;
+  padding: 0 1em 0 0;
+  border-radius: 10px;
+  font-size: 1em;
+  margin-left: 2rem;
+  margin-bottom: 5rem;
+}
+
+#linkedin h4 {
+  color: white;
+  justify-self: start;
+  padding-left: 1em;
+}
+
+#u-svg-content {
+  justify-self: end;
+}
+
 #get-started {
   background-color: #9693E6;
   text-align: center;
