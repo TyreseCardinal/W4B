@@ -58,12 +58,12 @@ img {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .mobile-word-wrap-test {
+  .mobile-word-wrap {
     display: none;
   }
 }
 header {
-  background-color: #0084FF;
+  background-color: #0084ff;
   width: auto;
   height: 100%;
   overflow-x: hidden;
@@ -94,8 +94,8 @@ header img {
 }
 
 #demo-application {
-  background-color: #B8DDFF;
-  color: #0084FF;
+  background-color: #b8ddff;
+  color: #0084ff;
   padding: 2rem 2rem 0 2rem;
 }
 
@@ -112,7 +112,7 @@ header img {
 }
 
 #app-store {
-  background-color: #0084FF;
+  background-color: #0084ff;
   color: white;
   display: grid;
   grid-template-columns: 40% 60%;
@@ -130,8 +130,8 @@ header img {
 }
 
 #clean-code {
-  background-color: #CAF0DB;
-  color: #54C788;
+  background-color: #caf0db;
+  color: #54c788;
   justify-items: center;
 }
 
@@ -148,8 +148,8 @@ header img {
 }
 
 #web-design {
-  background-color: #FFD2D2;
-  color: #FF8A8A;
+  background-color: #ffd2d2;
+  color: #ff8a8a;
   justify-items: center;
 }
 
@@ -166,8 +166,8 @@ header img {
 }
 
 #development {
-  background-color: #FFE7C4;
-  color: #FFC166;
+  background-color: #ffe7c4;
+  color: #ffc166;
   justify-items: center;
 }
 
@@ -184,8 +184,8 @@ header img {
 }
 
 #branding {
-  background-color: #D5D4F5;
-  color: #9693E6;
+  background-color: #d5d4f5;
+  color: #9693e6;
   justify-items: center;
 }
 
@@ -239,7 +239,7 @@ header img {
 }
 #strategic-planning {
   border-radius: 0px;
-  background-color: #9693E6;
+  background-color: #9693e6;
   color: white;
   text-align: left;
   width: 100vw;
@@ -297,8 +297,8 @@ header img {
 }
 
 #down-arrow {
-  border: 1px solid #D5D4F5;
-  background-color: #D5D4F5;
+  border: 1px solid #d5d4f5;
+  background-color: #d5d4f5;
   border-radius: 100%;
   justify-self: center;
   align-self: start;
@@ -335,7 +335,7 @@ header img {
 }
 
 #header-text-testimonials h1 {
-  color: #9693E6;
+  color: #9693e6;
   font-size: 2.5rem;
   margin: 0;
   padding: 0;
@@ -410,15 +410,15 @@ header img {
   }
 }
 #testimonial-1 {
-  background-color: #FFD2D2;
+  background-color: #ffd2d2;
 }
 
 #testimonial-2 {
-  background-color: #FFE7C4;
+  background-color: #ffe7c4;
 }
 
 #testimonial-3 {
-  background-color: #CAF0DB;
+  background-color: #caf0db;
 }
 
 .quote-svg {
@@ -428,7 +428,7 @@ header img {
 }
 
 #benefits-container {
-  background-color: #9693E6;
+  background-color: #9693e6;
   border-radius: 0;
   border: none;
   padding-bottom: 5rem;
@@ -438,7 +438,7 @@ header img {
   display: grid;
   text-align: center;
   color: white;
-  background-color: #9693E6;
+  background-color: #9693e6;
   font-size: 1.6em;
 }
 
@@ -489,13 +489,13 @@ header img {
 }
 
 #high-quality h4 {
-  color: #9693E6;
+  color: #9693e6;
   padding-left: 1rem;
   font-size: 2em;
 }
 
 #high-quality h2 {
-  color: #9693E6;
+  color: #9693e6;
   padding-left: 1rem;
   font-size: 4em;
 }
@@ -506,13 +506,13 @@ header img {
 }
 
 #creative-team h4 {
-  color: #9693E6;
+  color: #9693e6;
   padding-left: 1rem;
   font-size: 2em;
 }
 
 #creative-team h2 {
-  color: #9693E6;
+  color: #9693e6;
   padding-left: 1rem;
   font-size: 4em;
 }
@@ -523,13 +523,13 @@ header img {
 }
 
 #amazing-results h4 {
-  color: #9693E6;
+  color: #9693e6;
   padding-left: 1rem;
   font-size: 2em;
 }
 
 #amazing-results h2 {
-  color: #9693E6;
+  color: #9693e6;
   padding-left: 1rem;
   font-size: 4em;
 }
@@ -540,13 +540,13 @@ header img {
 }
 
 #best-pricing h4 {
-  color: #9693E6;
+  color: #9693e6;
   padding-left: 1rem;
   font-size: 2em;
 }
 
 #best-pricing h2 {
-  color: #9693E6;
+  color: #9693e6;
   padding-left: 1rem;
   font-size: 4em;
 }
@@ -558,13 +558,13 @@ header img {
 
 #innovations h4 {
   font-size: 2em;
-  color: #9693E6;
+  color: #9693e6;
   padding-left: 1rem;
 }
 
 #innovations h2 {
   font-size: 4em;
-  color: #9693E6;
+  color: #9693e6;
   padding-left: 1rem;
 }
 
@@ -574,19 +574,19 @@ header img {
 }
 
 #twofoursev-support h4 {
-  color: #9693E6;
+  color: #9693e6;
   padding-left: 1rem;
   font-size: 2em;
 }
 
 #twofoursev-support h2 {
-  color: #9693E6;
+  color: #9693e6;
   padding-left: 1rem;
   font-size: 4em;
 }
 
 .more-bubble {
-  background-color: #9693E6;
+  background-color: #9693e6;
   color: white;
   border-radius: 50px;
   justify-self: start;
@@ -633,11 +633,11 @@ header img {
 
 #about-us h1 {
   font-size: 3rem;
-  color: #9693E6;
+  color: #9693e6;
 }
 
 #about-us h2 {
-  color: #9693E6;
+  color: #9693e6;
   font-size: 2em;
   padding-left: 0.8em;
 }
@@ -677,7 +677,7 @@ header img {
   }
 }
 #linkedin {
-  background-color: #9693E6;
+  background-color: #9693e6;
   grid-template-columns: 1fr 4fr;
   display: grid;
   align-items: center;
@@ -701,18 +701,18 @@ header img {
 }
 
 #get-started {
-  background-color: #9693E6;
+  background-color: #9693e6;
   text-align: center;
   color: white;
 }
 
 #get-started h1 {
-  color: #FFC166;
+  color: #ffc166;
   font-size: 4rem;
 }
 
 #get-started h4 {
-  color: #D5D4F5;
+  color: #d5d4f5;
   padding-top: 4rem;
   font-size: 1.2em;
 }
@@ -728,7 +728,7 @@ header img {
 
 #get-started-button {
   background-color: white;
-  color: #9693E6;
+  color: #9693e6;
   display: grid;
   grid-template-columns: 100%;
   width: 60%;
