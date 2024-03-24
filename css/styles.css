@@ -53,12 +53,9 @@ img {
   .container {
     padding: 0;
   }
-  .tablet-word-wrap {
-    display: 1;
-  }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .mobile-word-wrap-test {
+@media screen and (min-width: 768px) {
+  .mobile-word-wrap {
     display: none;
   }
 }
@@ -347,11 +344,6 @@ header img {
   text-align: left;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  #tablet-word-wrap {
-    display: block;
-  }
-}
 @media screen and (max-width: 768px) {
   #testimonial-1,
   #testimonial-2,

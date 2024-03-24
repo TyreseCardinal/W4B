@@ -41,14 +41,10 @@ img {
   .container {
     padding: 0
   }
-
-  .tablet-word-wrap {
-    display: 1;
-  }
 }
 
-@media screen and (min-width:768px) and (max-width:1024px) {
-  .mobile-word-wrap-test {
+@media screen and (min-width:768px) {
+  .mobile-word-wrap {
     display: none;
   }
 }
@@ -373,13 +369,6 @@ header img {
   font-size: 1.4rem;
   text-align: left;
 }
-
-@media screen and (min-width:768px) and (max-width:1024px) {
-  #tablet-word-wrap {
-    display: block;
-  }
-}
-
 
 // End Of Testimonial Header and Text (Not The Cards) Styling //
 @media screen and (max-width:768px) {
